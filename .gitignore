@@ -1,6 +1,18 @@
-
+# Python
 venv/
 __pycache__/
 *.pyc
 .env
 .pytest_cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

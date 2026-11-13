@@ -4,7 +4,12 @@ from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
 # Load environment variables from .env
-load_dotenv()
+load_dotenv(
+    os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        ".env"
+    )
+)
 
 # Create database object
 db = SQLAlchemy()
